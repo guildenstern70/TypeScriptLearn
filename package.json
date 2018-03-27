@@ -1,0 +1,40 @@
+{
+    "name": "typescriptlearn",
+    "version": "0.1.0",
+    "description": "A project containing all main features of TypeScript",
+    "repository": "https://github.com/guildenstern70/TypeScriptLearn",
+    "license": "MIT",
+    "author": {
+        "name": "Alessio Saltarin",
+        "email": "alessiosaltarin@gmail.com"
+    },
+    "keywords": [
+        "typescript"
+    ],
+    "files": [
+        "lib"
+    ],
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "scripts": {
+        "clean": "rimraf lib && rimraf coverage",
+        "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+        "build": "tsc",
+        "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/chai": "^4.1.2",
+        "@types/mocha": "^5.0.0",
+        "@types/node": "^8.0.0",
+        "chai": "^4.1.2",
+        "mocha": "^5.0.5",
+        "rimraf": "^2.0.0",
+        "ts-node": "^3.3.0",
+        "tslint": "^5.0.0",
+        "typescript": "^2.7.2"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    }
+}
