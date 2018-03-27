@@ -6,11 +6,14 @@
  *  index.ts
  *
  */
-import {TypesAndVars} from './types-and-vars';
+import {Loops} from './loops';
 
 console.log('TypeScript Learn');
 console.log('');
 console.log('Run NPM RUN TEST');
 console.log('');
 
-TypesAndVars.Describe();
+Loops.ForIn();
+Loops.ForOf();
+Loops.Iterator();
+Loops.NormalFor();
