@@ -36,4 +36,9 @@ describe("TypesAndVars", () =>
         TypesAndVars.Sentence().should.equal("Hi, my name is Alessio Saltarin. I am 47.");
     });
 
+    it("Symbols should be equal to 6", () =>
+    {
+        TypesAndVars.Symbols().should.equal(6);
+    });
+
 });

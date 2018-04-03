@@ -17,6 +17,11 @@ const hex: number = 0xf00d;
 // Strings
 const color: string = "blue";
 
+// Symbols
+const ONE: symbol = Symbol("one");
+const TWO: symbol = Symbol("two");
+const THREE: symbol = Symbol("three");
+
 // Template Strings
 const fullName: string = "Alessio Saltarin";
 const age: number = 47;
@@ -60,6 +65,17 @@ export class TypesAndVars
     public static Sentence(): string
     {
         return sentence;
+    }
+
+    public static Symbols(): number
+    {
+        let myObj: any = {};
+
+        myObj[ONE] = 1;
+        myObj[TWO] = 2;
+        myObj[THREE] = 3;
+
+        return myObj[ONE]+myObj[TWO]+myObj[THREE];
     }
 
     public static Describe(): void

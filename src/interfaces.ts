@@ -11,7 +11,7 @@
 interface ILabelledValue
 {
     value: number;
-    label?: string;
+    label?: string;  // this field is optional
 }
 
 export class Labeller
