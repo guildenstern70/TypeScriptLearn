@@ -8,15 +8,13 @@
  */
 
 import {Labeller} from "./interfaces";
-import {expect} from "chai";
-import "mocha";
 
 describe("Labeller", () =>
 {
 
-    it("should print label", () =>
+    test("should print label", () =>
     {
-        expect(Labeller.print()).to.equal("10 (Size Object)");
+        expect(Labeller.print()).toBe("10 (Size Object)");
     });
 
 });
