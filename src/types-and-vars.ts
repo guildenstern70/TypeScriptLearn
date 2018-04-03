@@ -8,61 +8,61 @@
  */
 
 // Boolean
-let isDone: boolean = true;
+const isDone: boolean = true;
 
 // Numbers
-let decimal: number = 6;
-let hex: number = 0xf00d;
+const decimal: number = 6;
+const hex: number = 0xf00d;
 
 // Strings
-let color: string = 'blue';
+const color: string = "blue";
 
 // Template Strings
-let fullName: string = `Alessio Saltarin`;
-let age: number = 47;
-let sentence: string = `Hi, my name is ${ fullName }. I am ${ age }.`;
+const fullName: string = "Alessio Saltarin";
+const age: number = 47;
+const sentence: string = `Hi, my name is ${ fullName }. I am ${ age }.`;  // Notice `
 
 // Enums
 export enum Color {Red, Green, Blue}
-let c: Color = Color.Green;
+const c: Color = Color.Green;
 
 // Any
-let notSure: any = 4;
+const notSure: any = 4;
 
 // Cast (type assertion)
-let someValue: any = "this is a string";
-let strLength: number = (<string>someValue).length;
+const someValue: any = "this is a string";
+const strLength: number = (someValue as string).length;
 
 export class TypesAndVars
 {
-    static All(): number
+    public static All(): number
     {
         let result = -1;
 
         if (isDone)
         {
-            result = decimal*hex+color.length - notSure;
+            result = decimal * hex + color.length - notSure;
         }
 
         return result;
     }
 
-    static  Color(): Color
+    public static  Color(): Color
     {
         return c;
     }
 
-    static StrLength(): number
+    public static StrLength(): number
     {
         return strLength;
     }
 
-    static Sentence(): string
+    public static Sentence(): string
     {
         return sentence;
     }
 
-    static Describe(): void
+    public static Describe(): void
     {
         console.log(`All => ${TypesAndVars.All()}`);
         console.log(`Color => ${TypesAndVars.Color()}`);
@@ -70,4 +70,3 @@ export class TypesAndVars
         console.log(`Sentence => ${TypesAndVars.Sentence()}`);
     }
 }
-

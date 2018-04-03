@@ -1,12 +1,12 @@
 export class Loops
 {
 
-    static Iterator(): number
+    public static Iterator(): number
     {
         let result = 0;
-        let someArray = [1, 2, 3, 4];
+        const  someArray = [1, 2, 3, 4];
 
-        for (let entry of someArray)
+        for (const entry of someArray)
         {
             result += entry;
         }
@@ -14,12 +14,12 @@ export class Loops
         return result;
     }
 
-    static ForOf(): number
+    public static ForOf(): number
     {
         let result = 0;
-        let list = [4, 5, 6];
+        const list = [4, 5, 6];
 
-        for (let i of list) // "4", "5", "6"
+        for (const i of list) // "4", "5", "6"
         {
             result += i;
         }
@@ -27,12 +27,12 @@ export class Loops
         return result;
     }
 
-    static ForIn(): number
+    public static ForIn(): number
     {
         let result: number = 0;
-        let list = [4, 5, 6];
+        const list = [4, 5, 6];
 
-        for (let i in list) // "0", "1", "2",
+        for (const i in list) // "0", "1", "2",
         {
             result += Number(i);
         }
@@ -41,18 +41,17 @@ export class Loops
 
     }
 
-    static NormalFor(): number
+    public static NormalFor(): number
     {
         let result: number = 0;
         let i: number;
 
-        for (i = 0; i<=10; i+=2)
+        for (i = 0; i <= 10; i += 2)
         {
            result += i;
         }
 
         return result;
     }
-
 
 }

@@ -7,40 +7,51 @@
  *
  */
 
+import {Point} from "./simple-class";
+
 export class Collections
 {
 
-    static Arrays(): number
+    public static Arrays(): number
     {
-        let array: Array<number> = [];
+        const p1: Point = new Point(0, 1);
+        const p2: Point = new Point(10, 20);
+
+        const arrayOfObjects: Point[] = [];
+        arrayOfObjects.push(p1);
+        arrayOfObjects.push(p2);
+
+        const array: number[] = [];
         let result: number = 0;
 
         array.push(Number(10));
         array.push(Number(11));
         array.push(Number(12));
 
-        array.forEach(function (value) {
+        arrayOfObjects.forEach((point) => {
+            result += point.x;
+        });
+
+        array.forEach((value) => {
             result += value;
         });
 
         return result;
     }
 
-    static Tuples(): number
+    public static Tuples(): number
     {
         let tuple: [string, number];
 
         tuple = ["hello", 10]; // OK
 
         // Modify element
-        tuple[1] = 20;
+        tuple[1] = 20;  // => ["hello", 20]
 
         // Add element (beware of type!)
-        tuple[2] = 12; // works well because it can be string or number, union type
+        tuple[2] = 12; // => ["hello", 20, 12] works well because it can be string or number, union type
 
         return tuple[0].length + tuple[1] + Number(tuple[2]);
     }
-
-
-
+    
 }

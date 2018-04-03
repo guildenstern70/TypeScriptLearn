@@ -9,7 +9,7 @@
 
 export class Greeter
 {
-    readonly greeting: string;
+    private readonly greeting: string;
 
     constructor(message: string)
     {

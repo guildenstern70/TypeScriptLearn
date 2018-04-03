@@ -7,34 +7,33 @@
  *
  */
 
-import {TypesAndVars} from './types-and-vars';
-import chai = require('chai');
-import 'mocha';
+import {TypesAndVars} from "./types-and-vars";
+import chai = require("chai");
+import "mocha";
 
 chai.should();
 
-describe('TypesAndVars', () =>
+describe("TypesAndVars", () =>
 {
 
-    it('All should be 368718', () =>
+    it("All should be 368718", () =>
     {
         TypesAndVars.All().should.equal(368718);
     });
 
-    it('Color should be 1', () =>
+    it("Color should be 1", () =>
     {
         TypesAndVars.Color().should.equal(1);
     });
 
-    it('String length should be 16', () =>
+    it("String length should be 16", () =>
     {
         TypesAndVars.StrLength().should.equal(16);
     });
 
-    it('Sentence should be tho one expected', () =>
+    it("Sentence should be tho one expected", () =>
     {
-        TypesAndVars.Sentence().should.equal('Hi, my name is Alessio Saltarin. I am 47.');
+        TypesAndVars.Sentence().should.equal("Hi, my name is Alessio Saltarin. I am 47.");
     });
 
 });
-

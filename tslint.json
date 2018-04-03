@@ -1,6 +1,19 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-config-prettier"
-  ]
+    "extends": [
+        "tslint:latest"
+    ],
+    "rules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        },
+        "new-parens": true,
+        "no-arg": true,
+        "one-line": false,
+        "ordered-imports": false,
+        "no-trailing-whitespace": false,
+        "no-console": false,
+        "forin": false
+    }
 }

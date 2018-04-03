@@ -7,24 +7,21 @@
  *
  */
 
-import {Collections} from './collections';
-import chai = require('chai');
-import 'mocha';
+import chai = require("chai");
+import {Collections} from "./collections";
+import "mocha";
 
 chai.should();
 
-describe('Collections', () =>
+describe("Collections", () =>
 {
 
-    it('Arrays should be 33', () =>
-    {
-        Collections.Arrays().should.equal(33);
+    it("Arrays should be 43", () => {
+        Collections.Arrays().should.equal(43);
     });
 
-    it('Tuples should be 37', () =>
-    {
+    it("Tuples should be 37", () => {
         Collections.Tuples().should.equal(37);
     });
-
 
 });
