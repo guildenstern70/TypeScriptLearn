@@ -30,7 +30,7 @@ const c: Color = Color.Green;
 const notSure: any = 4;
 
 // Cast (type assertion)
-const someValue: any = "this is a string";
+const someValue: any = "this is a string";  // Note that this is 'any'
 const strLength: number = (someValue as string).length;
 
 export class TypesAndVars

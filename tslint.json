@@ -14,6 +14,7 @@
         "ordered-imports": false,
         "no-trailing-whitespace": false,
         "no-console": false,
-        "forin": false
+        "forin": false,
+        "max-classes-per-file": 2
     }
 }
