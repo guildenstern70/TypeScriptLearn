@@ -27,7 +27,7 @@ describe("Loops", () =>
         expect(Loops.Iterator()).toBe(10);
     });
 
-    test("Sentence should be tho one expected", () =>
+    test("Sentence should be the one expected", () =>
     {
         expect(Loops.NormalFor()).toBe(30);
     });
