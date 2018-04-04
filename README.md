@@ -2,10 +2,16 @@
 
 A project with all main TypeScript features
 
+### Setup
+
+Install all dependencies with
+
+    yarn install
+
 ### Run
 
 Run this program with 
 
-    npm run test
+    yarn run test
     
     
