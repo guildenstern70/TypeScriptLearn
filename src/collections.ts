@@ -12,6 +12,12 @@ import {Point} from "./simple-class";
 export class Collections
 {
 
+    /**
+     * Get sum of arrays
+     *
+     * @returns {number}
+     * @constructor
+     */
     public static Arrays(): number
     {
         const p1: Point = new Point(0, 1);
@@ -39,6 +45,12 @@ export class Collections
         return result;
     }
 
+    /**
+     * Tuples type
+     *
+     * @returns {number}
+     * @constructor
+     */
     public static Tuples(): number
     {
         let tuple: [string, number];
@@ -53,5 +65,5 @@ export class Collections
 
         return tuple[0].length + tuple[1] + Number(tuple[2]);
     }
-    
+
 }

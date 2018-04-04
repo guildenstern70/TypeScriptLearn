@@ -38,6 +38,9 @@ const notSure: any = 4;
 const someValue: any = "this is a string";  // Note that this is 'any'
 const strLength: number = (someValue as string).length;
 
+/**
+ * Various examples of variables and types
+ */
 export class TypesAndVars
 {
     public static All(): number
@@ -69,13 +72,13 @@ export class TypesAndVars
 
     public static Symbols(): number
     {
-        let myObj: any = {};
+        const myObj: any = {};
 
         myObj[ONE] = 1;
         myObj[TWO] = 2;
         myObj[THREE] = 3;
 
-        return myObj[ONE]+myObj[TWO]+myObj[THREE];
+        return myObj[ONE] + myObj[TWO] + myObj[THREE];
     }
 
     public static Describe(): void

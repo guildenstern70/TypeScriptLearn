@@ -17,11 +17,6 @@ describe("Loops", () =>
         expect(Loops.ForIn()).toBe(3);
     });
 
-    test("Color should be 1", () =>
-    {
-        expect(Loops.ForOf()).toBe(15);
-    });
-
     test("String length should be 16", () =>
     {
         expect(Loops.Iterator()).toBe(10);

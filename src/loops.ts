@@ -1,6 +1,25 @@
+/**
+ *
+ *  TypeScript Learn
+ *  (C) 2018 Alessio Saltarin
+ *
+ *  interfaces.ts
+ *
+ */
+
+/**
+ * Examples of loops
+ */
 export class Loops
 {
 
+    /**
+     *
+     * Normal way of looping (80% of the times)
+     *
+     * @returns {number}
+     * @constructor
+     */
     public static Iterator(): number
     {
         let result = 0;
@@ -14,19 +33,13 @@ export class Loops
         return result;
     }
 
-    public static ForOf(): number
-    {
-        let result = 0;
-        const list = [4, 5, 6];
-
-        for (const i of list) // "4", "5", "6"
-        {
-            result += i;
-        }
-
-        return result;
-    }
-
+    /**
+     *
+     * Normal JavaScript iterator iterates on indexes!
+     *
+     * @returns {number}
+     * @constructor
+     */
     public static ForIn(): number
     {
         let result: number = 0;
@@ -41,6 +54,13 @@ export class Loops
 
     }
 
+    /**
+     *
+     * C-Style for loop
+     *
+     * @returns {number}
+     * @constructor
+     */
     public static NormalFor(): number
     {
         let result: number = 0;
