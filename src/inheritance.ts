@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018 Alessio Saltarin
+ *  (C) 2018-20 Alessio Saltarin
  *
  *  inheritance.ts
  *
