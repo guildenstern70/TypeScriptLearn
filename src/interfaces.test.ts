@@ -7,14 +7,10 @@
  *
  */
 
-import {Labeller} from "./interfaces";
+import { Labeller } from './interfaces';
 
-describe("Labeller", () =>
-{
-
-    test("should print label", () =>
-    {
-        expect(Labeller.print()).toBe("10 (Size Object)");
+describe('Labeller', () => {
+    test('should print label', () => {
+        expect(Labeller.print()).toBe('10 (Size Object)');
     });
-
 });

@@ -7,23 +7,18 @@
  *
  */
 
+import { TypeInference } from './type-inference';
 
-import {TypeInference} from "./type-inference";
-
-describe("Type Inference", () =>
-{
-    test("Type of 3 must be number", () =>
-    {
-        expect(TypeInference.TypeOfNumber()).toBe("number");
+describe('Type Inference', () => {
+    test('Type of 3 must be number', () => {
+        expect(TypeInference.TypeOfNumber()).toBe('number');
     });
 
-    test("Type of a point must be object", () =>
-    {
-        expect(TypeInference.TypeOfObject()).toBe("object");
+    test('Type of a point must be object', () => {
+        expect(TypeInference.TypeOfObject()).toBe('object');
     });
 
-    test("Name Type of a point must be Point", () =>
-    {
-        expect(TypeInference.Reflection()).toBe("Point");
+    test('Name Type of a point must be Point', () => {
+        expect(TypeInference.Reflection()).toBe('Point');
     });
 });

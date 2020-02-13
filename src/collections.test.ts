@@ -7,18 +7,14 @@
  *
  */
 
-import {Collections} from "./collections";
+import { Collections } from './collections';
 
-
-describe("Collections", () =>
-{
-
-    test("Arrays should be 43", () => {
+describe('Collections', () => {
+    test('Arrays should be 43', () => {
         expect(Collections.Arrays()).toBe(43);
     });
 
-    test("Tuples should be 37", () => {
+    test('Tuples should be 37', () => {
         expect(Collections.Tuples()).toBe(37);
     });
-
 });

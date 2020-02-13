@@ -8,70 +8,67 @@
  */
 
 // Boolean
-const isDone: boolean = true;
+const isDone = true;
 
 // Numbers
-const decimal: number = 6;
-const hex: number = 0xf00d;
+const decimal = 6;
+const hex = 0xf00d;
 
 // Strings
-const color: string = "blue";
+const color = 'blue';
 
 // Symbols
-const ONE: symbol = Symbol("one");
-const TWO: symbol = Symbol("two");
-const THREE: symbol = Symbol("three");
+const ONE = Symbol('one');
+const TWO = Symbol('two');
+const THREE = Symbol('three');
 
 // Template Strings
-const fullName: string = "Alessio Saltarin";
-const age: number = 47;
-const sentence: string = `Hi, my name is ${ fullName }. I am ${ age }.`;  // Notice `
+const fullName = 'Alessio Saltarin';
+const age = 47;
+const sentence = `Hi, my name is ${fullName}. I am ${age}.`; // Notice `
 
 // Enums
-export enum Color {Red, Green, Blue}
+export enum Color {
+    Red,
+    Green,
+    Blue,
+}
 const c: Color = Color.Green;
 
 // Any
 const notSure: any = 4;
 
 // Cast (type assertion)
-const someValue: any = "this is a string";  // Note that this is 'any'
+const someValue: any = 'this is a string'; // Note that this is 'any'
 const strLength: number = (someValue as string).length;
 
 /**
  * Various examples of variables and types
  */
-export class TypesAndVars
-{
-    public static All(): number
-    {
+export class TypesAndVars {
+    public static All(): number {
         let result = -1;
 
-        if (isDone)
-        {
+        if (isDone) {
             result = decimal * hex + color.length - notSure;
         }
 
         return result;
     }
 
-    public static  Color(): Color
-    {
+    public static Color(): Color {
         return c;
     }
 
-    public static StrLength(): number
-    {
+    public static StrLength(): number {
         return strLength;
     }
 
-    public static Sentence(): string
-    {
+    public static Sentence(): string {
         return sentence;
     }
 
-    public static Symbols(): number
-    {
+    public static Symbols(): number {
         const myObj: any = {};
 
         myObj[ONE] = 1;
@@ -81,8 +78,7 @@ export class TypesAndVars
         return myObj[ONE] + myObj[TWO] + myObj[THREE];
     }
 
-    public static Describe(): void
-    {
+    public static Describe(): void {
         console.log(`All => ${TypesAndVars.All()}`);
         console.log(`Color => ${TypesAndVars.Color()}`);
         console.log(`StrLength => ${TypesAndVars.StrLength()}`);

@@ -7,16 +7,11 @@
  *
  */
 
-import {Greeter} from "./greeter";
+import { Greeter } from './greeter';
 
-
-describe("Greeter class", () =>
-{
-
-    test("should greet Alessio", () =>
-    {
-        const greet = new Greeter("Alessio");
-        expect(greet.greet()).toBe("Bonjour, Alessio!");
+describe('Greeter class', () => {
+    test('should greet Alessio', () => {
+        const greet = new Greeter('Alessio');
+        expect(greet.greet()).toBe('Bonjour, Alessio!');
     });
-
 });

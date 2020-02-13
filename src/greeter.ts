@@ -7,8 +7,7 @@
  *
  */
 
-export class Greeter
-{
+export class Greeter {
     private readonly greeting: string;
 
     /**
@@ -17,8 +16,7 @@ export class Greeter
      *
      * @param {string} message
      */
-    constructor(message: string)
-    {
+    constructor(message: string) {
         this.greeting = message;
     }
 
@@ -27,8 +25,7 @@ export class Greeter
      *
      * @returns {string}
      */
-    public greet(): string
-    {
+    public greet(): string {
         return `Bonjour, ${this.greeting}!`;
     }
 }

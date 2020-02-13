@@ -10,9 +10,7 @@
 /**
  * Examples of loops
  */
-export class Loops
-{
-
+export class Loops {
     /**
      *
      * Normal way of looping (80% of the times)
@@ -20,13 +18,11 @@ export class Loops
      * @returns {number}
      * @constructor
      */
-    public static Iterator(): number
-    {
+    public static Iterator(): number {
         let result = 0;
-        const  someArray = [1, 2, 3, 4];
+        const someArray = [1, 2, 3, 4];
 
-        for (const entry of someArray)
-        {
+        for (const entry of someArray) {
             result += entry;
         }
 
@@ -40,18 +36,16 @@ export class Loops
      * @returns {number}
      * @constructor
      */
-    public static ForIn(): number
-    {
-        let result: number = 0;
+    public static ForIn(): number {
+        let result = 0;
         const list = [4, 5, 6];
 
-        for (const i in list) // "0", "1", "2",
-        {
+        for (const i in list) {
+            // "0", "1", "2",
             result += Number(i);
         }
 
         return result;
-
     }
 
     /**
@@ -61,17 +55,14 @@ export class Loops
      * @returns {number}
      * @constructor
      */
-    public static NormalFor(): number
-    {
-        let result: number = 0;
+    public static NormalFor(): number {
+        let result = 0;
         let i: number;
 
-        for (i = 0; i <= 10; i += 2)
-        {
-           result += i;
+        for (i = 0; i <= 10; i += 2) {
+            result += i;
         }
 
         return result;
     }
-
 }

@@ -10,8 +10,7 @@
 /**
  * Point class
  */
-export class Point
-{
+export class Point {
     public readonly x: number;
     public readonly y: number;
 
@@ -22,10 +21,8 @@ export class Point
      * @param {number} xx Point x coordinate
      * @param {number} yy Point y coordinate
      */
-    constructor(xx: number, yy: number)
-    {
+    constructor(xx: number, yy: number) {
         this.x = xx;
         this.y = yy;
     }
-
 }

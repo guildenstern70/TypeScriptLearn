@@ -1,28 +1,16 @@
+import { Functional } from './functional';
+import { Point } from './simple-class';
 
-
-import {Functional} from "./functional";
-import {Point} from "./simple-class";
-
-
-describe("Functional", () =>
-{
-
+describe('Functional', () => {
     const functional = new Functional();
 
-
-    test("Points with negative x must be 2", () => {
-
-        const predicate = (point: Point) => (point.x < 0);
+    test('Points with negative x must be 2', () => {
+        const predicate = (point: Point) => point.x < 0;
         expect(functional.getTotalPoints(predicate)).toBe(2);
-
     });
 
-    test("Sum of x points with positive x must be 30", () => {
-
-        const predicate = (point: Point) => (point.x >= 0);
+    test('Sum of x points with positive x must be 30', () => {
+        const predicate = (point: Point) => point.x >= 0;
         expect(functional.getReduced(predicate)).toBe(30);
-
     });
-
 });
-

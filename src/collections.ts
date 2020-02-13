@@ -7,19 +7,16 @@
  *
  */
 
-import {Point} from "./simple-class";
+import { Point } from './simple-class';
 
-export class Collections
-{
-
+export class Collections {
     /**
      * Get sum of arrays
      *
      * @returns {number}
      * @constructor
      */
-    public static Arrays(): number
-    {
+    public static Arrays(): number {
         const p1: Point = new Point(0, 1);
         const p2: Point = new Point(10, 20);
 
@@ -28,17 +25,17 @@ export class Collections
         arrayOfObjects.push(p2);
 
         const array: number[] = [];
-        let result: number = 0;
+        let result = 0;
 
         array.push(Number(10));
         array.push(Number(11));
         array.push(Number(12));
 
-        arrayOfObjects.forEach((point) => {
+        arrayOfObjects.forEach(point => {
             result += point.x;
         });
 
-        array.forEach((value) => {
+        array.forEach(value => {
             result += value;
         });
 
@@ -51,19 +48,17 @@ export class Collections
      * @returns {number}
      * @constructor
      */
-    public static Tuples(): number
-    {
-        let tuple: [string, number];
+    public static Tuples(): number {
+        const tuple: [string, number];
 
-        tuple = ["hello", 10]; // OK
+        tuple = ['hello', 10]; // OK
 
         // Modify element
-        tuple[1] = 20;  // => ["hello", 20]
+        tuple[1] = 20; // => ["hello", 20]
 
         // Add element (beware of type!)
-        tuple[2] = 12; // => ["hello", 20, 12] works well because it can be string or number, union type
+        // tuple[2] = 12; // => ["hello", 20, 12] works well because it can be string or number, union type
 
         return tuple[0].length + tuple[1] + Number(tuple[2]);
     }
-
 }

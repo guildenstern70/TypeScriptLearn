@@ -7,7 +7,7 @@
  *
  */
 
-import {Point} from "./simple-class";
+import { Point } from './simple-class';
 
 /**
  * Function pattern
@@ -17,15 +17,8 @@ export type Predicate = (p: Point) => boolean;
 /**
  * Some functional programming examples
  */
-export class Functional
-{
-    private readonly points = [
-        new Point(-5, 0),
-        new Point(10, 200),
-        new Point(20, 120),
-        new Point(-10, 30)
-      ];
-
+export class Functional {
+    private readonly points = [new Point(-5, 0), new Point(10, 200), new Point(20, 120), new Point(-10, 30)];
 
     /**
      *
@@ -37,19 +30,15 @@ export class Functional
      *
      * @param {Predicate} functor
      */
-    public getTotalPoints(functor: Predicate): number
-    {
+    public getTotalPoints(functor: Predicate): number {
         let totalPoints = 0;
-        this.points.forEach((point) =>
-        {
-            if (functor(point))
-            {
+        this.points.forEach(point => {
+            if (functor(point)) {
                 totalPoints += 1;
             }
         });
         return totalPoints;
     }
-
 
     /**
      *
@@ -58,11 +47,9 @@ export class Functional
      * @param {Predicate} functor
      * @returns {Point[]}
      */
-    public getSpecialPoints(functor: Predicate): Point[]
-    {
+    public getSpecialPoints(functor: Predicate): Point[] {
         return this.points.filter(functor);
     }
-
 
     /**
      * Typical example of map + reduce (sum of arrays):
@@ -75,15 +62,13 @@ export class Functional
      * https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
      *
      */
-    public getReduced(functor: Predicate): number
-    {
+    public getReduced(functor: Predicate): number {
         const points = this.getSpecialPoints(functor);
 
         // 1. Map
-        const xPoints: number[] = points.map((p) => p.x);
+        const xPoints: number[] = points.map(p => p.x);
 
         // 2. Reduce
-        return xPoints.reduce((x1, x2) =>  x1 + x2, 0);
+        return xPoints.reduce((x1, x2) => x1 + x2, 0);
     }
 }
-

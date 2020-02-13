@@ -10,8 +10,7 @@
 /**
  * Base abstract class
  */
-abstract class Shape
-{
+abstract class Shape {
     protected abstract area(): number;
     protected abstract perimeter(): number;
 }
@@ -19,16 +18,14 @@ abstract class Shape
 /**
  * Implementation of base class
  */
-class Square extends Shape
-{
+class Square extends Shape {
     private readonly side: number;
 
     /**
      *
      * @param {number} squareSide
      */
-    constructor(squareSide: number)
-    {
+    constructor(squareSide: number) {
         super();
         this.side = squareSide;
     }
@@ -38,9 +35,8 @@ class Square extends Shape
      *
      * @returns {number}
      */
-    public area(): number
-    {
-        return (this.side * this.side);
+    public area(): number {
+        return this.side * this.side;
     }
 
     /**
@@ -48,8 +44,7 @@ class Square extends Shape
      *
      * @returns {number}
      */
-    public perimeter(): number
-    {
+    public perimeter(): number {
         return 4 * this.side;
     }
 }

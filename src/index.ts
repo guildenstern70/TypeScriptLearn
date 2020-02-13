@@ -6,12 +6,12 @@
  *  index.ts
  *
  */
-import {Loops} from "./loops";
+import { Loops } from './loops';
 
-console.log("TypeScript Learn");
-console.log("");
-console.log("Run NPM RUN TEST");
-console.log("");
+console.log('TypeScript Learn');
+console.log('');
+console.log('Run NPM RUN TEST');
+console.log('');
 
 Loops.ForIn();
 Loops.ForOf();
