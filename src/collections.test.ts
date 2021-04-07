@@ -14,7 +14,7 @@ describe('Collections', () => {
         expect(Collections.Arrays()).toBe(43);
     });
 
-    test('Tuples should be 37', () => {
-        expect(Collections.Tuples()).toBe(37);
+    test('Tuples should be 28', () => {
+        expect(Collections.Tuples()).toBe(28);
     });
 });

@@ -49,16 +49,14 @@ export class Collections {
      * @constructor
      */
     public static Tuples(): number {
-        const tuple: [string, number];
-
-        tuple = ['hello', 10]; // OK
+        let tuple: [string, number] = ['hello', 10];
 
         // Modify element
         tuple[1] = 20; // => ["hello", 20]
 
         // Add element (beware of type!)
-        // tuple[2] = 12; // => ["hello", 20, 12] works well because it can be string or number, union type
+        tuple.push(12); // => [ "hello", 20, 12 ] works well because it can be string or number, union type
 
-        return tuple[0].length + tuple[1] + Number(tuple[2]);
+        return tuple[0].length + tuple[1] + tuple.length; // 5 + 20 + 3 = 28
     }
 }
