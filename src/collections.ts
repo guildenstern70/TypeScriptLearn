@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-21 Alessio Saltarin
+ *  (C) 2018-22 Alessio Saltarin
  *
  *  collections.ts
  *
@@ -49,7 +49,7 @@ export class Collections {
      * @constructor
      */
     public static Tuples(): number {
-        let tuple: [string, number] = ['hello', 10];
+        const tuple: [string, number] = ['hello', 10];
 
         // Modify element
         tuple[1] = 20; // => ["hello", 20]
