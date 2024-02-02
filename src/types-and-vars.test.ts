@@ -11,7 +11,7 @@ import { TypesAndVars } from './types-and-vars';
 
 describe('TypesAndVars', () => {
     test('All should be 368718', () => {
-        expect(TypesAndVars.All()).toBe(368718);
+        expect(TypesAndVars.All()).toBe(368724.5);
     });
 
     test('Color should be 1', () => {

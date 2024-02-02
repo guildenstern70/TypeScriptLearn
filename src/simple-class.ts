@@ -25,4 +25,13 @@ export class Point {
         this.x = xx;
         this.y = yy;
     }
+
+    /**
+     * Distance from origin
+     *
+     * @returns {number}
+     */
+    public distanceFromOrigin(): number {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+    }
 }

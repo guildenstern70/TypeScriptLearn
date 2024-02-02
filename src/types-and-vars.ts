@@ -13,6 +13,7 @@ const isDone = true;
 // Numbers
 const decimal = 6;
 const hex = 0xf00d;
+const float = 6.5;
 
 // Strings
 const color = 'blue';
@@ -50,7 +51,7 @@ export class TypesAndVars {
         let result = -1;
 
         if (isDone) {
-            result = decimal * hex + color.length - notSure;
+            result = decimal * hex + color.length - notSure + float;
         }
 
         return result;
