@@ -31,11 +31,11 @@ export class Collections {
         array.push(Number(11));
         array.push(Number(12));
 
-        arrayOfObjects.forEach(point => {
+        arrayOfObjects.forEach((point) => {
             result += point.x;
         });
 
-        array.forEach(value => {
+        array.forEach((value) => {
             result += value;
         });
 

@@ -14,20 +14,17 @@ type User = {
     id: number;
     name: string;
     email: string;
-}
+};
 
 export class CustomTypes {
-
     private user: User = {
         id: 1,
         name: 'Alessio Saltarin',
-        email: 'alessiosaltarin@gmail.com'
+        email: 'alessiosaltarin@gmail.com',
     };
 
     public getUser(): User {
-
         console.log(`User: ${this.user.name} (${this.user.email})`);
         return this.user;
     }
-
 }

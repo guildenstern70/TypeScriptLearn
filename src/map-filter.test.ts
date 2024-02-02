@@ -7,8 +7,7 @@
  *
  */
 
-import {MapFilter} from "./map-filter";
-
+import { MapFilter } from './map-filter';
 
 describe('MapFilter class', () => {
     test('should extract point with Y>18', () => {
@@ -28,9 +27,8 @@ describe('MapFilter class', () => {
         const points = pointsDb.mapPoints(2);
         let sum = 0;
         for (const p of points) {
-            sum += (p.x + p.y)
+            sum += p.x + p.y;
         }
         expect(sum).toBe(270);
     });
 });
-

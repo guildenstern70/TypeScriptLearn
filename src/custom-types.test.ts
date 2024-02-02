@@ -7,7 +7,7 @@
  *
  */
 
-import { CustomTypes } from "./custom-types";
+import { CustomTypes } from './custom-types';
 
 describe('Custom type', () => {
     test('should work', () => {
@@ -15,4 +15,3 @@ describe('Custom type', () => {
         expect(customType.getUser().email).toBe('alessiosaltarin@gmail.com');
     });
 });
-

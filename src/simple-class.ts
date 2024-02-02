@@ -11,7 +11,7 @@
  * Point class
  */
 export class Point {
-    public readonly x: number;  // Getter/Setters are not needed
+    public readonly x: number; // Getter/Setters are not needed
     public readonly y: number;
 
     /**

@@ -18,11 +18,7 @@ export type Predicate = (p: Point) => boolean;
  * Some functional programming examples
  */
 export class Functional {
-    private readonly points = [
-        new Point(-5, 0),
-        new Point(10, 200),
-        new Point(20, 120),
-        new Point(-10, 30)];
+    private readonly points = [new Point(-5, 0), new Point(10, 200), new Point(20, 120), new Point(-10, 30)];
 
     /**
      *
@@ -36,7 +32,7 @@ export class Functional {
      */
     public getTotalPoints(functor: Predicate): number {
         let totalPoints = 0;
-        this.points.forEach(point => {
+        this.points.forEach((point) => {
             if (functor(point)) {
                 totalPoints += 1;
             }
@@ -70,7 +66,7 @@ export class Functional {
         const points = this.getSpecialPoints(functor);
 
         // 1. Map
-        const xPoints: number[] = points.map(p => p.x);
+        const xPoints: number[] = points.map((p) => p.x);
 
         // 2. Reduce
         return xPoints.reduce((x1, x2) => x1 + x2, 0);

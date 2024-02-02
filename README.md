@@ -9,13 +9,13 @@ A project with all main TypeScript features
 
 Install all dependencies with
 
-    yarn install
+    npm install
 
 ### Run
 
 Before running, you must transpile the code into JavaScript. To do that:
 
-    yarn run build
+    npm run build
 
 transpiled code will be found in
 
@@ -23,6 +23,15 @@ transpiled code will be found in
 
 Then, you can run
 
-    yarn run test
+    npm run test
+
+
+### Format source code and fix lint issues
+
+To format the source code and fix lint issues, run
+
+    npm run format
+
+
     
     
