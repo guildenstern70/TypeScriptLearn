@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-22 Alessio Saltarin
+ *  (C) 2018-24 Alessio Saltarin
  *
  *  functional.ts
  *
@@ -18,7 +18,11 @@ export type Predicate = (p: Point) => boolean;
  * Some functional programming examples
  */
 export class Functional {
-    private readonly points = [new Point(-5, 0), new Point(10, 200), new Point(20, 120), new Point(-10, 30)];
+    private readonly points = [
+        new Point(-5, 0),
+        new Point(10, 200),
+        new Point(20, 120),
+        new Point(-10, 30)];
 
     /**
      *

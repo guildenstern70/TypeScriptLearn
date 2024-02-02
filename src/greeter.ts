@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-22 Alessio Saltarin
+ *  (C) 2018-24 Alessio Saltarin
  *
  *  greeter.ts
  *
@@ -11,7 +11,6 @@ export class Greeter {
     private readonly greeting: string;
 
     /**
-     *
      * Greet with a message
      *
      * @param {string} message

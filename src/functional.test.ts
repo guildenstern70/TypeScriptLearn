@@ -1,3 +1,12 @@
+/**
+ *
+ *  TypeScript Learn
+ *  (C) 2018-24 Alessio Saltarin
+ *
+ *  functional-test.ts
+ *
+ */
+
 import { Functional } from './functional';
 import { Point } from './simple-class';
 

@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-22 Alessio Saltarin
+ *  (C) 2018-24 Alessio Saltarin
  *
  *  collections.ts
  *

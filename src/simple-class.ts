@@ -1,7 +1,7 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-22 Alessio Saltarin
+ *  (C) 2018-24 Alessio Saltarin
  *
  *  simple-class.ts
  *
@@ -11,7 +11,7 @@
  * Point class
  */
 export class Point {
-    public readonly x: number;
+    public readonly x: number;  // Getter/Setters are not needed
     public readonly y: number;
 
     /**
