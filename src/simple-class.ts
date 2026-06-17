@@ -1,7 +1,8 @@
 /**
  *
  *  TypeScript Learn
- *  (C) 2018-24 Alessio Saltarin
+ *  (C) 2018-26 Alessio Saltarin
+ *  MIT License (see LICENSE file)
  *
  *  simple-class.ts
  *
