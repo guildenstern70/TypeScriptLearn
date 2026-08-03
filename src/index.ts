@@ -12,3 +12,4 @@ console.log('TypeScript Learn');
 console.log('');
 console.log('Run NPM RUN TEST');
 console.log('');
+
