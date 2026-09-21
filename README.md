@@ -2,36 +2,38 @@
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
+A project showcasing all main TypeScript features.
 
-A project with all main TypeScript features
+> **Note:** This program is **not intended to be run directly** as a standalone application. Instead, run the test suite to verify and execute the project code.
 
 ### Setup
 
-Install all dependencies with
+Install all dependencies:
 
-    npm install
+```bash
+npm install
+```
 
-### Run
+### Build & Run Tests
 
-Before running, you must transpile the code into JavaScript. To do that:
+Before building or running tests, ensure dependencies are installed. 
 
-    npm run build
+To transpile the TypeScript source code into JavaScript (output to `/lib`):
 
-transpiled code will be found in
+```bash
+npm run build
+```
 
-    /lib
+To run the test suite:
 
-Then, you can run
-
-    npm run test
-
+```bash
+npm run test
+```
 
 ### Format source code and fix lint issues
 
-To format the source code and fix lint issues, run
+To format the source code and fix lint issues, run:
 
-    npm run format
-
-
-    
-    
+```bash
+npm run format
+```
