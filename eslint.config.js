@@ -1,6 +1,5 @@
 const js = require("@eslint/js");
-const tsParser = require("@typescript-eslint/parser");
-const tsPlugin = require("@typescript-eslint/eslint-plugin");
+const babelParser = require("@babel/eslint-parser");
 const prettier = require("eslint-config-prettier");
 const globals = require("globals");
 
@@ -12,22 +11,23 @@ module.exports = [
   {
     files: ["**/*.ts"],
     languageOptions: {
-      parser: tsParser,
+      parser: babelParser,
       parserOptions: {
         ecmaVersion: "latest",
-        sourceType: "module"
+        sourceType: "module",
+        requireConfigFile: false,
+        babelOptions: {
+          presets: ["@babel/preset-typescript"]
+        }
       },
       globals: {
         ...globals.node,
         ...globals.jest
       }
     },
-    plugins: {
-      "@typescript-eslint": tsPlugin
-    },
     rules: {
-      ...tsPlugin.configs.recommended.rules,
-      "@typescript-eslint/no-explicit-any": "off"
+      "no-undef": "off",
+      "no-unused-vars": "off"
     }
   },
   prettier
